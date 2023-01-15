@@ -16,7 +16,7 @@
 
 - name: Reboot if required
   reboot:
-  when: reboot_required_file.stat.exists == true 
+  when: reboot_required_file.stat.exists == true and inventory_hostname is not in manual_reboot_list  
 
 - name: Waiting for the machine to come back
   local_action: wait_for host={{ ansible_host }} state=started port=22 delay=30
