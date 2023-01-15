@@ -1,2 +1,7 @@
 ---
 # defaults file for linux_update
+manual_reboot_list:
+  - tower
+  - AWX
+  - testvm01
+  - testvm02
