@@ -1,0 +1,11 @@
+# I do not want to accidentally upload a vault password
+*.vaultpass
+
+# Ignore inventory files as well.
+*.inv
+
+*.retry
+*.pyc
+*.DS_Store?
+*pytestdebug.log
+.DS_Store
