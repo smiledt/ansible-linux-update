@@ -1,5 +1,6 @@
 ---
 # defaults file for linux_update
-manual_reboot_list:
-  - tower
+linux_update_manual_reboot_list:
+  # - tower
   - AWX
+  - classi01

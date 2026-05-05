@@ -1,5 +1,7 @@
---- 
-- hosts: linux
+---
+
+- name: Linux Update Playbook
+  hosts: all
   become: true
-  roles: 
+  roles:
     - linux_update
